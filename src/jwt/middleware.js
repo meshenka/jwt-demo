@@ -6,6 +6,8 @@ const audience = 'https://jwt-demo/api'
 const issuer =  'https://jwt-demo'
 
 export const configureJwtMiddleware = () => {
+  console.log("JWT SECRET", process.env.JWT_SECRET)
+
   return ejwt({ 
     secret: process.env.JWT_SECRET,
     audience: audience,
