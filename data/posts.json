@@ -1,0 +1,11 @@
+[{
+    "title": "The Sprawl",
+    "id": 1,
+    "@uri": "/api/v1/post/1"
+  },
+  {
+    "title": "Donjons sans façons",
+    "id": 2,
+    "@uri": "/api/v1/post/2"
+  }
+]

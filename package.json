@@ -2,7 +2,7 @@
   "name": "jwt-demo",
   "version": "1.0.0",
   "description": "A test drive OAuth2 + JWT node application",
-  "main": "index.js",
+  "main": "build/main.bundle.js.",
   "author": "Sylvain Gogel <sylvain.gogel@gmail.com>",
   "license": "MIT",
   "private": true,
