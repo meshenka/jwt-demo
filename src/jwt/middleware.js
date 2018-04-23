@@ -2,11 +2,10 @@ import ejwt from 'express-jwt'
 import getJwtToken from '../http/request'
 import jwt from 'jsonwebtoken'
 
-const audience = 'https://jwt-demo/api'
-const issuer =  'https://jwt-demo'
+const audience = process.env.JWT_AUDIENCE
+const issuer =  process.env.JWT_ISSUER
 
 export const configureJwtMiddleware = () => {
-  console.log("JWT SECRET", process.env.JWT_SECRET)
 
   return ejwt({ 
     secret: process.env.JWT_SECRET,

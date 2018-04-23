@@ -12,9 +12,9 @@ export default (app) => {
     // @TODO validate credentials
 
     const token = createJwtToken({foo: 'bar'})
-    console.log(token)
+    console.info("issuing JWT token:", token)
     res.setHeader('Authorization', 'Bearer ' + token)
-    res.json({token: token})
+    res.json({token})
 
   })
 
